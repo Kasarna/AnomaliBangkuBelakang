@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    color:white;
+    background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.85)),
+    url("BG.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed; 
+}
+
+.box{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:12px;
+    padding:6px;
+
+    transition:0.25s ease; /* animasi halus */
+    transform-origin:center;
+}
+
+.G{
+    width:140px;
+    aspect-ratio:1/1; /* selalu kotak */
+    background:white;
+    border-radius:10px;
+    margin-bottom:5px;
+}
+
+.BR{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:2px;
+}
+
+.N{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  
+}
+.KI{
+    width:95%;
+    max-width:900px;
+    margin:auto;
+    padding:20px 0;
+}
+
+.glass{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:15px;
+    padding:15px;
+    margin-bottom:15px;
+}
+.MU{
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+#jam{
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+    margin-top:15px;
+}

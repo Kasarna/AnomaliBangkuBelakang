@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>icikiwir</title>
+   <link rel="stylesheet" href="anggota.css">
+</head>
+<body>
+<div class="KI">
+  
+<div class="glass">
+<div class="box">
+  <div class="BR">
+    <img src="Leo.jpg" class="G" >
+    <div class="N">NATALEO FIRNANDA PUTRA</div>
+  </div>
+</div>
+</div>
+
+<section class="glass">
+<h1>Tentang</h1>
+  <p>
+    lahir pada 31 Desember 2009 dengan keinginan untuk menjadi kamen rider Oren.
+  </p>
+</section>
+<div class="glass">
+  <h1>Lihat Kebunku (Taman Bunga) — Aku Jeje</h1><br>
+  <audio controls="musik.box">
+    <source src="Lihat Kebunku (Taman Bunga) - Aku Jeje _ Lirik Lagu.m4a" type="audio/mpeg" class="MU">
+  </audio>
+</div>
+
+<div class="glass">
+<div id="jam"></div>
+<div></div>
+</div>
+
+<script>
+function updateJam() {
+    const sekarang = new Date();
+
+    let jam = sekarang.getHours().toString().padStart(2, '0');
+    let menit = sekarang.getMinutes().toString().padStart(2, '0');
+    let detik = sekarang.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(updateJam, 1000);
+updateJam();
+</script>
+</div>
+  
+</body>
+</html>

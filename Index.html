@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <br>
+  <div class="tulisan">
+  <h1 id="text"></h1>
+
+  <script>
+    const text = "Selamat datang di ABB";
+    let i = 0;
+
+    function type() {
+      if (i < text.length) {
+        document.getElementById("text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 100);
+      }
+    }
+
+    // jalan sekali saat halaman dibuka
+    window.onload = type;
+  </script>
+</div><br>
+<div class="KI">
+  <section class="glass">
+    <h2>Sejarah ABB</h2>
+    <p>ABB (Anomali Bangku Belakang) di dirikan pada 30 Oktober 2025. awal mula berdiri ABB di fungsikan untuk pelatihan kerja kelompok seni musik, dan kemudian di alih fungsikan sebagai forum perserikatan Bangku belakang.</p>
+</section>
+
+<section class="glass">
+    <h2>Anggota</h2><br>
+
+    <div class="members">
+
+        <div class="KM">
+          <a href="hanny.html">
+            <img src="Hany.jpg" class="G">
+          </a>
+            <h3>Hanny</h3>
+        </div>
+
+        <div class="KM">
+          <a href="ayu.html">
+            <img src="Ayu.jpg" class="G">
+          </a>
+            <h3>Ayu</h3>
+        </div>
+
+        <div class="KM">
+          <a href="rafa.html">
+            <img src="Rafa.jpg" class="G">
+          </a>
+            <h3>Rafa</h3>
+        </div>
+
+        <div class="KM">
+        <a href="fio.html">
+          <img src="Fio.jpg" class="G">
+        </a>
+          <h3>Fio</h3>
+       </div>
+       
+        <div class="KM">
+        <a href="riski.html">
+          <img src="Rizky.jpg" class="G">
+        </a>
+          <h3>Rizky</h3>
+        </div>
+        
+        <div class="KM">
+        <a href="april.html">
+          <img src="April.jpg" class="G">
+        </a>
+          <h3>April</h3>
+        </div>
+
+        <div class="KM">
+        <a href="leo.html">
+          <img src="Leo.jpg" class="G">
+        </a>
+          <h3>Leo</h3>
+          </div>
+          
+        <div class="KM">
+        <a href="azam.html">
+          <img src="Azam.jpg" class="G">
+        </a>
+          <h3>Azam</h3>
+        </div>
+        
+        <div class="KM">
+        <a href="Ali.html">
+          <img src="Ali.jpg" class="G">
+        </a>
+          <h3>Ali</h3>
+          </div>
+
+    </div>
+</section>
+</div>
+
+<footer>
+    © Rafa Dian Saputra 2026
+</footer>
+
+</body>
+</html>
